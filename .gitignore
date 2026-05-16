@@ -1,0 +1,12 @@
+output/
+apartmentwebsite landingpage sample.png
+assets/northcliff-rendering-original.jpg
+assets/northcliff-rendering.jpg
+assets/plans/*.jpg
+assets/plans/simplified/
+assets/docs/*permit-plans.pdf
+assets/docs/3-bedroom-floor-plan.pdf
+assets/docs/building-c-d-3-bedroom-floor-plan.pdf
+assets/docs/simplified/
+.DS_Store
+Thumbs.db
