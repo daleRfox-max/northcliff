@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Leasing | NorthCliff Commons Shelton WA</title>
+    <meta name="description" content="Contact Jennifer Fox for leasing at NorthCliff Commons in Shelton, WA. Call 360-229-1220 or join the priority list for availability updates.">
+    <meta property="og:image" content="https://northcliff.vercel.app/assets/og/northcliff-og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://northcliff.vercel.app/leasing">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header><a class="brand" href="/"><span class="brand-mark">NC</span><span>NorthCliff Commons</span></a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span></button><nav class="nav-links" data-nav><a href="/floor-plans">Floor Plans</a><a href="/location">Location</a><a href="/leasing" aria-current="page">Leasing</a><a href="/about">About</a><a class="nav-call" href="tel:+13602291220">Call 360-229-1220</a></nav></header>
+    <main>
+      <section class="contact-hero section-wrap"><div><p class="opening"><span>Priority Leasing List</span> Opening December 2027</p><h1>Get Availability Updates</h1><p>Be among the first to receive floor plan releases, pricing updates, construction progress, and leasing availability for NorthCliff Commons.</p></div><address class="leasing-details"><span>Leasing Contact</span><strong>Jennifer Fox</strong><a href="tel:+13602291220">360-229-1220</a><a href="mailto:jennifer@sentrypark.com">jennifer@sentrypark.com</a><small>1220 Jones St., Shelton, WA 98584</small></address></section>
+      <section class="section-wrap form-section" id="leasing-form">
+        <form class="inquiry-form" action="/api/contact" method="post" data-inquiry-form>
+          <div class="form-heading"><p class="section-label">Leasing Inquiry</p><h2>Send to Jennifer.</h2><p>Tell Jennifer what you are looking for and she will follow up as availability details are released.</p></div>
+          <label class="honeypot-field" aria-hidden="true">Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+          <input name="formType" type="hidden" value="inquiry">
+          <label>Full name <input name="name" type="text" autocomplete="name" required></label>
+          <label>Email <input name="email" type="email" autocomplete="email" required><small>Monthly updates, never spam.</small></label>
+          <label>Phone <input name="phone" type="tel" inputmode="tel" autocomplete="tel" required></label>
+          <label>Desired move-in timing <select name="moveInTiming"><option value="0-6 months">0-6 months</option><option value="6-12 months">6-12 months</option><option value="12+ months">12+ months</option><option value="Flexible" selected>Flexible</option></select></label>
+          <fieldset class="unit-options"><legend>Unit type interest</legend><label><input name="unitType" type="checkbox" value="1BR"> 1BR</label><label><input name="unitType" type="checkbox" value="2BR"> 2BR</label><label><input name="unitType" type="checkbox" value="3BR"> 3BR</label><label><input name="unitType" type="checkbox" value="Not sure"> Not sure</label></fieldset>
+          <label>Notes <textarea name="message" rows="6" placeholder="Tell us what type of apartment you are interested in."></textarea></label>
+          <button class="button primary" type="submit" data-submit-button>Send My Inquiry</button>
+          <p class="form-note" data-form-note aria-live="polite"></p>
+        </form>
+        <aside class="contact-aside"><img src="assets/northcliff-rendering-rust-beige.jpg" alt="NorthCliff Commons Shelton WA apartment exterior rendering" width="1874" height="839" loading="lazy"><h2>Leasing Process</h2><p>Join the list now. Receive updates as pricing and availability are released. Priority list members hear first before the December 2027 opening.</p><a class="button secondary" href="/floor-plans">View Floor Plans</a></aside>
+      </section>
+      <section class="section-wrap faq-section"><div class="section-heading"><p class="section-label">Leasing FAQ</p><h2>What happens after you join?</h2></div><div class="faq-list"><details open><summary>Will I receive pricing right away?</summary><p>Pricing will be released as opening approaches. Joining the list makes sure you hear first.</p></details><details><summary>Can I ask about a specific plan?</summary><p>Yes. Include your preferred bedroom count or plan in the notes field.</p></details><details><summary>Can I call instead?</summary><p>Yes. Call Jennifer Fox at <a href="tel:+13602291220">360-229-1220</a>.</p></details></div></section>
+    </main>
+    <footer class="site-footer"><p>NorthCliff Commons</p><p>1220 Jones St., Shelton, WA 98584</p><p><a href="tel:+13602291220">360-229-1220</a> · <a href="mailto:jennifer@sentrypark.com">jennifer@sentrypark.com</a></p></footer>
+    <div data-analytics-config data-ga-id="" data-meta-pixel-id="" hidden></div>
+    <script src="script.js"></script>
+  </body>
+</html>

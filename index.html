@@ -1,16 +1,25 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NorthCliff Commons | Luxury Apartments in Shelton, WA</title>
-    <meta name="description" content="NorthCliff Commons is a new luxury apartment community opening December 2027 at 1220 Jones St., Shelton, WA 98584. View floor plans and contact Jennifer Fox for leasing.">
+    <title>NorthCliff Commons | New Apartments in Shelton, WA | Opening Dec 2027</title>
+    <meta name="description" content="43 new luxury apartments in Shelton, WA. 1, 2, and 3 bedrooms with garage and carport parking. Join the priority list. Opening December 2027.">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="NorthCliff Commons | Luxury Apartments in Shelton, WA">
-    <meta property="og:description" content="Bright, modern apartment living coming to Shelton, WA. Grand opening December 2027.">
+    <meta property="og:title" content="NorthCliff Commons | New Apartments in Shelton, WA">
+    <meta property="og:description" content="43 new apartments in Shelton, WA. 1, 2, and 3 bedrooms opening December 2027.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/northcliff-rendering-rust-beige.jpg">
-    <link rel="canonical" href="https://northcliffcommons.com/">
+    <meta property="og:url" content="https://northcliff.vercel.app/">
+    <meta property="og:site_name" content="NorthCliff Commons">
+    <meta property="og:image" content="https://northcliff.vercel.app/assets/og/northcliff-og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NorthCliff Commons | New Apartments in Shelton, WA">
+    <meta name="twitter:description" content="43 new apartments in Shelton, WA. Opening December 2027.">
+    <meta name="twitter:image" content="https://northcliff.vercel.app/assets/og/northcliff-og-image.jpg">
+    <link rel="canonical" href="https://northcliff.vercel.app/">
+    <link rel="preload" as="image" href="assets/northcliff-rendering-rust-beige.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -18,26 +27,74 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ApartmentComplex",
-        "name": "NorthCliff Commons",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1220 Jones St.",
-          "addressLocality": "Shelton",
-          "addressRegion": "WA",
-          "postalCode": "98584",
-          "addressCountry": "US"
-        },
-        "telephone": "+1-360-229-1220",
-        "email": "jennifer@sentrypark.com",
-        "openingDate": "2027-12",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "name": "Jennifer Fox",
-          "telephone": "+1-360-229-1220",
-          "email": "jennifer@sentrypark.com",
-          "contactType": "leasing"
-        }
+        "@graph": [
+          {
+            "@type": "ApartmentComplex",
+            "@id": "https://northcliff.vercel.app/#apartmentcomplex",
+            "name": "NorthCliff Commons",
+            "description": "43 new luxury apartments in Shelton, WA with 1, 2, and 3 bedroom plans, garage parking, and carport parking. Opening December 2027.",
+            "url": "https://northcliff.vercel.app/",
+            "image": "https://northcliff.vercel.app/assets/og/northcliff-og-image.jpg",
+            "openingDate": "2027-12-01",
+            "numberOfAccommodationUnits": 43,
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1220 Jones St.",
+              "addressLocality": "Shelton",
+              "addressRegion": "WA",
+              "postalCode": "98584",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 47.2168,
+              "longitude": -123.1007
+            },
+            "telephone": "+1-360-229-1220",
+            "email": "jennifer@sentrypark.com",
+            "amenityFeature": [
+              { "@type": "LocationFeatureSpecification", "name": "Garage parking", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Carport parking", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "New construction", "value": true }
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "name": "Jennifer Fox",
+              "telephone": "+1-360-229-1220",
+              "email": "jennifer@sentrypark.com",
+              "contactType": "leasing"
+            }
+          },
+          {
+            "@type": "RealEstateAgent",
+            "@id": "https://northcliff.vercel.app/#leasing",
+            "name": "NorthCliff Commons Leasing",
+            "telephone": "+1-360-229-1220",
+            "email": "jennifer@sentrypark.com",
+            "areaServed": "Shelton, WA"
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://northcliff.vercel.app/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "When does NorthCliff Commons open?",
+                "acceptedAnswer": { "@type": "Answer", "text": "NorthCliff Commons is scheduled to open in December 2027." }
+              },
+              {
+                "@type": "Question",
+                "name": "What floor plans are available?",
+                "acceptedAnswer": { "@type": "Answer", "text": "NorthCliff Commons offers 1, 2, and 3 bedroom apartments across four buildings totaling 43 units." }
+              },
+              {
+                "@type": "Question",
+                "name": "Who do I contact for leasing?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Jennifer Fox is the leasing contact. Call 360-229-1220 or email jennifer@sentrypark.com." }
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
@@ -46,70 +103,63 @@
       <div class="launch-stage">
         <div class="launch-brandline" aria-hidden="true">
           <span>NorthCliff Commons</span>
-          <small>Website Coming Soon</small>
+          <small>Opening Preview</small>
         </div>
         <div class="launch-track" data-launch-track>
-          <article class="launch-slide is-active" data-launch-slide>
+          <article class="launch-slide launch-theme-sunset is-active" data-launch-slide>
             <div class="launch-number">01</div>
             <div class="launch-copy">
               <p>Grand Opening</p>
               <h2>December 2027</h2>
-              <span>NorthCliff Commons is preparing a new luxury apartment community for Shelton, Washington.</span>
+              <span>NorthCliff Commons is preparing 43 new apartment homes for Shelton, Washington.</span>
             </div>
             <figure>
-              <img src="assets/northcliff-rendering-rust-beige.jpg" alt="NorthCliff Commons exterior rendering in beige and rust-brown colors" width="1874" height="839">
+              <img src="assets/northcliff-rendering-rust-beige.jpg" alt="NorthCliff Commons apartment building in Shelton, WA with beige siding and rust accents" width="1874" height="839">
             </figure>
           </article>
-
-          <article class="launch-slide" data-launch-slide>
+          <article class="launch-slide launch-theme-forest" data-launch-slide>
             <div class="launch-number">02</div>
+            <div class="launch-copy">
+              <p>Residences</p>
+              <h2>1, 2 &amp; 3 Bedrooms</h2>
+              <span>Review plans across buildings A, B, C, and D before you join the priority list.</span>
+            </div>
+            <figure>
+              <img src="assets/plans/renter-clean/3-bedroom-renter-clean.jpg" alt="3 bedroom apartment floor plan at NorthCliff Commons Shelton WA" width="1800" height="1260">
+            </figure>
+          </article>
+          <article class="launch-slide launch-theme-harbor" data-launch-slide>
+            <div class="launch-number">03</div>
             <div class="launch-copy">
               <p>Shelton, WA</p>
               <h2>1220 Jones St.</h2>
-              <span>A calm Mason County setting with a polished Northwest residential feel.</span>
+              <span>A Mason County residential setting with garage and carport parking planned.</span>
             </div>
             <figure class="launch-map-card" aria-label="Stylized preview of the NorthCliff Commons location">
               <strong>Jones St.</strong>
               <small>NorthCliff Commons</small>
             </figure>
           </article>
-
-          <article class="launch-slide" data-launch-slide>
-            <div class="launch-number">03</div>
-            <div class="launch-copy">
-              <p>Residences</p>
-              <h2>Detailed Plans</h2>
-              <span>Review bedrooms, baths, kitchens, laundry, closets, patios, and room dimensions before you inquire.</span>
-            </div>
-            <figure>
-              <img src="assets/plans/detailed-clean/3-bedroom-detailed.jpg" alt="Detailed three-bedroom apartment plan preview" width="1800" height="1260">
-            </figure>
-          </article>
-
-          <article class="launch-slide" data-launch-slide>
+          <article class="launch-slide launch-theme-gold" data-launch-slide>
             <div class="launch-number">04</div>
             <div class="launch-copy">
               <p>Leasing Updates</p>
               <h2>Jennifer Fox</h2>
-              <span>Call 360-229-1220 or email jennifer@sentrypark.com to ask about future leasing and renting updates.</span>
+              <span>Call 360-229-1220 or join the list for future floor plan, pricing, and availability updates.</span>
             </div>
             <div class="launch-contact-card">
               <span>Leasing Contact</span>
               <strong>Jennifer Fox</strong>
-              <a href="tel:+13602291220">360-229-1220</a>
+              <a href="tel:+13602291220" aria-label="Call Jennifer Fox at 360-229-1220">360-229-1220</a>
               <a href="mailto:jennifer@sentrypark.com">jennifer@sentrypark.com</a>
             </div>
           </article>
         </div>
-
         <div class="launch-controls" aria-label="Intro slider controls">
           <button type="button" data-launch-prev aria-label="Previous intro slide">Prev</button>
-          <div class="launch-progress" aria-hidden="true">
-            <span data-launch-progress></span>
-          </div>
+          <div class="launch-progress" aria-hidden="true"><span data-launch-progress></span></div>
           <button type="button" data-launch-next aria-label="Next intro slide">Next</button>
         </div>
-
         <div class="launch-footer">
           <span data-launch-count>01 / 04</span>
           <button type="button" class="launch-enter" data-launch-enter>Enter Website</button>
@@ -118,7 +168,7 @@
     </section>
 
     <header class="site-header" data-header>
-      <a class="brand" href="#home" aria-label="NorthCliff Commons home">
+      <a class="brand" href="/" aria-label="NorthCliff Commons home">
         <span class="brand-mark" aria-hidden="true">NC</span>
         <span>NorthCliff Commons</span>
       </a>
@@ -127,195 +177,258 @@
         <span></span>
       </button>
       <nav class="nav-links" aria-label="Primary navigation" data-nav>
-        <a href="#residences">Residences</a>
-        <a href="#floor-plans">Floor Plans</a>
-        <a href="#location">Location</a>
-        <a href="contact.html">Contact</a>
+        <a href="/floor-plans">Floor Plans</a>
+        <a href="/location">Location</a>
+        <a href="/leasing">Leasing</a>
+        <a href="/about">About</a>
+        <a class="nav-call" href="tel:+13602291220" aria-label="Call Jennifer Fox at 360-229-1220">Call 360-229-1220</a>
       </nav>
     </header>
 
     <main id="home">
       <section class="hero section-wrap">
         <div class="hero-copy">
-          <p class="opening"><span>Grand Opening</span> December 2027</p>
+          <div class="hero-facts" aria-label="NorthCliff Commons quick facts">
+            <span>43 apartments</span>
+            <span>1-3 bedrooms</span>
+            <span>Garage + carport</span>
+          </div>
+          <p class="opening"><span>Now Accepting Leasing Interest</span> Opening December 2027</p>
           <h1><span>NorthCliff</span><span>Commons</span></h1>
-          <p class="hero-text">A bright new luxury apartment community coming to 1220 Jones St. in Shelton, Washington, designed for modern Northwest living.</p>
+          <p class="hero-text">43 new luxury apartments in Shelton, WA. Choose from 1, 2, and 3 bedroom plans with garage and carport parking in a quiet Mason County setting.</p>
           <div class="hero-actions" aria-label="Primary calls to action">
-            <a class="button primary" href="contact.html">Inquire About Leasing</a>
+            <a class="button primary" href="#leasing-form">Join the Priority Leasing List</a>
             <a class="button secondary" href="#floor-plans">View Floor Plans</a>
           </div>
         </div>
-        <figure class="hero-media">
-          <img src="assets/northcliff-rendering-rust-beige.jpg" alt="Rendering of NorthCliff Commons apartment building with beige siding, rust-brown accents, black balconies, and evergreen surroundings" width="1874" height="839">
-        </figure>
+        <div class="hero-panel" id="leasing-form">
+          <form class="inquiry-form compact-form" action="/api/contact" method="post" data-inquiry-form data-form-type="inquiry">
+            <div class="form-heading">
+              <p class="section-label">Availability Updates</p>
+              <h2>Be first to know.</h2>
+              <p>Get floor plan releases, pricing updates, and leasing availability before the public.</p>
+            </div>
+            <label class="honeypot-field" aria-hidden="true">Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+            <input name="formType" type="hidden" value="inquiry">
+            <label>Name <input name="name" type="text" autocomplete="name" required></label>
+            <label>Email <input name="email" type="email" autocomplete="email" required><small>Monthly updates, never spam.</small></label>
+            <label>Phone <input name="phone" type="tel" inputmode="tel" autocomplete="tel" required></label>
+            <label>Unit interest
+              <select name="unitType" data-unit-interest>
+                <option>Not sure yet</option>
+                <option>1BR</option>
+                <option>2BR</option>
+                <option>3BR</option>
+              </select>
+            </label>
+            <button class="button primary" type="submit" data-submit-button>Get Availability Updates</button>
+            <p class="form-note" data-form-note aria-live="polite"></p>
+          </form>
+        </div>
       </section>
 
       <section class="intro-band" aria-label="Community highlights">
-        <div>
-          <span>Opening</span>
-          <strong>December 2027</strong>
-        </div>
-        <div>
-          <span>Location</span>
-          <strong>Shelton, WA</strong>
-        </div>
-        <div>
-          <span>Leasing Contact</span>
-          <strong>Jennifer Fox</strong>
-        </div>
+        <div><span>Community</span><strong>43 apartments</strong></div>
+        <div><span>Plans</span><strong>1, 2, and 3 bedrooms</strong></div>
+        <div><span>Parking</span><strong>Garage and carport</strong></div>
       </section>
 
       <section class="section-wrap split-section" id="residences">
         <div>
           <p class="section-label">Residences</p>
-          <h2>Modern apartments with a quiet Northwest point of view.</h2>
+          <h2>Apartment living without the apartment hassle.</h2>
         </div>
         <div class="section-copy">
-          <p>NorthCliff Commons pairs clean architecture, private outdoor moments, and a calm residential setting close to daily Shelton conveniences.</p>
-          <div class="feature-list" aria-label="Residence features">
-            <span>Contemporary exterior design</span>
-            <span>Private balconies and patios</span>
-            <span>Three-bedroom plan previews</span>
-            <span>Parking and garage plan information</span>
+          <p>43 brand-new homes in Shelton, designed for people who want modern living, practical parking, and a quiet neighborhood without giving up the conveniences of being close to town.</p>
+          <div class="feature-list" aria-label="Residence facts">
+            <span>Four buildings: A, B, C, and D</span>
+            <span>1, 2, and 3 bedroom plans</span>
+            <span>Garage and carport parking</span>
+            <span>Opening December 2027</span>
           </div>
         </div>
       </section>
 
+      <section class="section-wrap amenities-section" id="amenities">
+        <div class="section-heading">
+          <p class="section-label">What You Get</p>
+          <h2>Specifics you can scan in five seconds.</h2>
+        </div>
+        <div class="amenity-grid">
+          <article><span aria-hidden="true">2027</span><h3>New Construction</h3><p>Brand-new apartments opening in December 2027.</p></article>
+          <article><span aria-hidden="true">43</span><h3>Neighborhood Scale</h3><p>A 43-unit community across four buildings.</p></article>
+          <article><span aria-hidden="true">1-3</span><h3>Bedroom Options</h3><p>1, 2, and 3 bedroom plans for different household needs.</p></article>
+          <article><span aria-hidden="true">P</span><h3>Garage Parking</h3><p>Garage parking is part of the community plan.</p></article>
+          <article><span aria-hidden="true">C</span><h3>Carport Parking</h3><p>Covered carport parking is also planned.</p></article>
+          <article><span aria-hidden="true">WA</span><h3>Shelton Setting</h3><p>1220 Jones St. puts you in a Mason County residential location.</p></article>
+          <article><span aria-hidden="true">AB</span><h3>Building A/B Plans</h3><p>Review first- and second-floor plan sheets before leasing.</p></article>
+          <article><span aria-hidden="true">CD</span><h3>Building C/D Plans</h3><p>Detailed plans are available for buildings C and D.</p></article>
+        </div>
+      </section>
+
       <section class="image-break" aria-label="NorthCliff Commons exterior rendering">
-        <img src="assets/northcliff-rendering-rust-beige.jpg" alt="Full exterior rendering of NorthCliff Commons apartments with beige siding and rust-brown accent panels" width="1874" height="839" loading="lazy">
+        <picture>
+          <source srcset="assets/northcliff-rendering-rust-beige.webp" type="image/webp">
+          <img src="assets/northcliff-rendering-rust-beige.jpg" alt="NorthCliff Commons apartment building in Shelton, WA with Pacific Northwest evergreens" width="1874" height="839" loading="lazy" decoding="async">
+        </picture>
       </section>
 
       <section class="section-wrap plans-section" id="floor-plans">
         <div class="section-heading">
           <p class="section-label">Floor Plans</p>
-          <h2>Explore building and residence plans.</h2>
-          <p>Preview cleaned detailed plan sheets below. The unrelated permit title blocks have been reduced, while room labels, dimensions, kitchens, baths, laundry, doors, and fixtures remain visible.</p>
+          <h2>Pick your future home.</h2>
+          <p>Browse 1, 2, and 3 bedroom layouts across four buildings. Each plan shows kitchens, bathrooms, closets, and circulation so you can find the right fit before you call.</p>
         </div>
-
-        <div class="plans-grid">
+        <div class="plans-grid enhanced-plans">
           <article class="plan-card featured-plan">
-            <a href="assets/plans/detailed-clean/3-bedroom-detailed.jpg" aria-label="Open detailed three bedroom floor plan preview">
-              <img src="assets/plans/detailed-clean/3-bedroom-detailed.jpg" alt="Detailed three-bedroom apartment floor plan showing room labels, dimensions, baths, closets, laundry, and stairs" width="1800" height="1260">
+            <a class="plan-image-link" href="assets/plans/renter-clean/3-bedroom-renter-clean.jpg" data-lightbox-src="assets/plans/renter-clean/3-bedroom-renter-clean.jpg" data-lightbox-alt="3 bedroom apartment floor plan at NorthCliff Commons Shelton WA" data-lightbox-caption="3 Bedroom Residence">
+              <picture><source srcset="assets/plans/renter-clean/3-bedroom-renter-clean.webp" type="image/webp"><img src="assets/plans/renter-clean/3-bedroom-renter-clean.jpg" alt="3 bedroom apartment floor plan at NorthCliff Commons Shelton WA" width="1800" height="1260" loading="lazy" decoding="async"></picture>
+              <span>View Plan</span>
             </a>
             <div class="plan-card-copy">
               <h3>3 Bedroom Residence</h3>
-              <p>Detailed residence plan with room names, dimensions, closets, bathrooms, laundry, and stair locations retained.</p>
-              <div class="plan-specs" aria-label="Three bedroom plan details">
-                <span>3 bedrooms</span>
-                <span>2 baths shown</span>
-                <span>Room dimensions</span>
-              </div>
-              <a href="assets/docs/detailed-clean/3-bedroom-detailed.pdf">Open Detailed PDF</a>
+              <p>3 bedroom apartment plan with room dimensions, baths, closets, laundry labels from the plan sheet, and stair locations.</p>
+              <div class="plan-specs"><span>3 bedrooms</span><span>2 baths shown</span></div>
+              <div class="plan-actions"><a class="button primary" href="#leasing-form" data-unit-select="3BR">Ask About This Unit</a><a href="assets/docs/detailed-clean/3-bedroom-detailed.pdf">View Detailed PDF</a></div>
+              <small>Or call Jennifer at <a href="tel:+13602291220">360-229-1220</a>.</small>
             </div>
           </article>
-
           <article class="plan-card">
-            <a href="assets/plans/detailed-clean/building-a-first-floor-detailed.jpg" aria-label="Open detailed Building A and B first floor plan preview">
-              <img src="assets/plans/detailed-clean/building-a-first-floor-detailed.jpg" alt="Detailed Building A and B first floor plan showing kitchens, living rooms, bedrooms, baths, patios, doors, and dimensions" width="1800" height="1260">
+            <a class="plan-image-link" href="assets/plans/renter-clean/building-a-first-floor-renter-clean.jpg" data-lightbox-src="assets/plans/renter-clean/building-a-first-floor-renter-clean.jpg" data-lightbox-alt="Building A and B first floor plan at NorthCliff Commons Shelton" data-lightbox-caption="Building A/B First Floor">
+              <picture><source srcset="assets/plans/renter-clean/building-a-first-floor-renter-clean.webp" type="image/webp"><img src="assets/plans/renter-clean/building-a-first-floor-renter-clean.jpg" alt="Building A and B first floor plan at NorthCliff Commons Shelton" width="1800" height="1260" loading="lazy" decoding="async"></picture>
+              <span>View Plan</span>
             </a>
-            <div class="plan-card-copy">
-              <h3>Building A/B First Floor</h3>
-              <p>Detailed first-floor layout with kitchens, living rooms, bedrooms, bathrooms, entries, patios, and appliance locations.</p>
-              <div class="plan-specs" aria-label="Building A and B first floor plan details">
-                <span>First-floor layout</span>
-                <span>Kitchens shown</span>
-                <span>Entries & patios</span>
-              </div>
-              <a href="assets/docs/detailed-clean/building-a-first-floor-detailed.pdf">Open Detailed PDF</a>
-            </div>
+            <div class="plan-card-copy"><h3>Building A/B First Floor</h3><p>Renter-clean first-floor overview with apartment areas, room labels, and key dimensions.</p><div class="plan-specs"><span>First floor</span><span>Building A/B</span></div><div class="plan-actions"><a class="button primary" href="#leasing-form" data-unit-select="1BR / 2BR">Ask About This Unit</a><a href="assets/docs/detailed-clean/building-a-first-floor-detailed.pdf">View Detailed PDF</a></div><small>Or call Jennifer at <a href="tel:+13602291220">360-229-1220</a>.</small></div>
           </article>
-
           <article class="plan-card">
-            <a href="assets/plans/detailed-clean/building-a-second-floor-detailed.jpg" aria-label="Open detailed Building A and B second floor plan preview">
-              <img src="assets/plans/detailed-clean/building-a-second-floor-detailed.jpg" alt="Detailed Building A and B second floor plan showing bedrooms, baths, closets, stairs, doors, and dimensions" width="1800" height="1260">
+            <a class="plan-image-link" href="assets/plans/renter-clean/building-a-second-floor-renter-clean.jpg" data-lightbox-src="assets/plans/renter-clean/building-a-second-floor-renter-clean.jpg" data-lightbox-alt="Building A and B second floor apartment plan in Shelton WA" data-lightbox-caption="Building A/B Second Floor">
+              <picture><source srcset="assets/plans/renter-clean/building-a-second-floor-renter-clean.webp" type="image/webp"><img src="assets/plans/renter-clean/building-a-second-floor-renter-clean.jpg" alt="Building A and B second floor apartment plan in Shelton WA" width="1800" height="1260" loading="lazy" decoding="async"></picture>
+              <span>View Plan</span>
             </a>
-            <div class="plan-card-copy">
-              <h3>Building A/B Second Floor</h3>
-              <p>Upper-level layout with bedroom names, room dimensions, bathrooms, closets, doors, and stair circulation visible.</p>
-              <div class="plan-specs" aria-label="Building A and B second floor plan details">
-                <span>Second-floor layout</span>
-                <span>Bedroom zones</span>
-                <span>Baths & closets</span>
-              </div>
-              <a href="assets/docs/detailed-clean/building-a-second-floor-detailed.pdf">Open Detailed PDF</a>
-            </div>
+            <div class="plan-card-copy"><h3>Building A/B Second Floor</h3><p>Renter-clean upper-level layout with room labels, bedroom areas, and key dimensions.</p><div class="plan-specs"><span>Second floor</span><span>Building A/B</span></div><div class="plan-actions"><a class="button primary" href="#leasing-form" data-unit-select="2BR / 3BR">Ask About This Unit</a><a href="assets/docs/detailed-clean/building-a-second-floor-detailed.pdf">View Detailed PDF</a></div><small>Or call Jennifer at <a href="tel:+13602291220">360-229-1220</a>.</small></div>
           </article>
-
           <article class="plan-card">
-            <a href="assets/plans/detailed-clean/building-c-d-3-bedroom-detailed.jpg" aria-label="Open detailed Building C and D three bedroom plan preview">
-              <img src="assets/plans/detailed-clean/building-c-d-3-bedroom-detailed.jpg" alt="Detailed Building C and D three-bedroom floor plan showing bedrooms, baths, closets, stairs, and room dimensions" width="1800" height="1260">
+            <a class="plan-image-link" href="assets/plans/renter-clean/building-c-d-3-bedroom-renter-clean.jpg" data-lightbox-src="assets/plans/renter-clean/building-c-d-3-bedroom-renter-clean.jpg" data-lightbox-alt="Building C and D 3 bedroom apartment floor plan Shelton WA" data-lightbox-caption="Building C/D 3 Bedroom">
+              <picture><source srcset="assets/plans/renter-clean/building-c-d-3-bedroom-renter-clean.webp" type="image/webp"><img src="assets/plans/renter-clean/building-c-d-3-bedroom-renter-clean.jpg" alt="Building C and D 3 bedroom apartment floor plan Shelton WA" width="1800" height="1260" loading="lazy" decoding="async"></picture>
+              <span>View Plan</span>
             </a>
-            <div class="plan-card-copy">
-              <h3>Building C/D 3 Bedroom</h3>
-              <p>Detailed three-bedroom layout with room names, dimensions, bathrooms, closets, stairs, and fixture locations visible.</p>
-              <div class="plan-specs" aria-label="Building C and D three bedroom plan details">
-                <span>3 bedrooms</span>
-                <span>Bath zones</span>
-                <span>Stair access</span>
-              </div>
-              <a href="assets/docs/detailed-clean/building-c-d-3-bedroom-detailed.pdf">Open Detailed PDF</a>
-            </div>
+            <div class="plan-card-copy"><h3>Building C/D 3 Bedroom</h3><p>Renter-clean three-bedroom layout with room labels, room dimensions, and overall layout.</p><div class="plan-specs"><span>3 bedrooms</span><span>Building C/D</span></div><div class="plan-actions"><a class="button primary" href="#leasing-form" data-unit-select="3BR">Ask About This Unit</a><a href="assets/docs/detailed-clean/building-c-d-3-bedroom-detailed.pdf">View Detailed PDF</a></div><small>Or call Jennifer at <a href="tel:+13602291220">360-229-1220</a>.</small></div>
           </article>
-
           <article class="plan-card">
-            <a href="assets/plans/detailed-clean/building-c-d-first-floor-detailed.jpg" aria-label="Open detailed Building C and D first floor plan preview">
-              <img src="assets/plans/detailed-clean/building-c-d-first-floor-detailed.jpg" alt="Detailed Building C and D first floor plan showing kitchens, living rooms, bedrooms, baths, patios, and dimensions" width="1800" height="1260">
+            <a class="plan-image-link" href="assets/plans/renter-clean/building-c-d-first-floor-renter-clean.jpg" data-lightbox-src="assets/plans/renter-clean/building-c-d-first-floor-renter-clean.jpg" data-lightbox-alt="Building C and D first floor plan at NorthCliff Commons Shelton WA" data-lightbox-caption="Building C/D First Floor">
+              <picture><source srcset="assets/plans/renter-clean/building-c-d-first-floor-renter-clean.webp" type="image/webp"><img src="assets/plans/renter-clean/building-c-d-first-floor-renter-clean.jpg" alt="Building C and D first floor plan at NorthCliff Commons Shelton WA" width="1800" height="1260" loading="lazy" decoding="async"></picture>
+              <span>View Plan</span>
             </a>
-            <div class="plan-card-copy">
-              <h3>Building C/D First Floor</h3>
-              <p>Detailed first-floor building layout with kitchens, living areas, bedrooms, bathrooms, entries, and patios visible.</p>
-              <div class="plan-specs" aria-label="Building C and D first floor plan details">
-                <span>First-floor layout</span>
-                <span>Kitchens shown</span>
-                <span>Exterior access</span>
-              </div>
-              <a href="assets/docs/detailed-clean/building-c-d-first-floor-detailed.pdf">Open Detailed PDF</a>
-            </div>
+            <div class="plan-card-copy"><h3>Building C/D First Floor</h3><p>Renter-clean first-floor building layout with room labels, apartment areas, and key dimensions.</p><div class="plan-specs"><span>First floor</span><span>Building C/D</span></div><div class="plan-actions"><a class="button primary" href="#leasing-form" data-unit-select="1BR / 2BR">Ask About This Unit</a><a href="assets/docs/detailed-clean/building-c-d-first-floor-detailed.pdf">View Detailed PDF</a></div><small>Or call Jennifer at <a href="tel:+13602291220">360-229-1220</a>.</small></div>
           </article>
-
           <article class="plan-card">
-            <a href="assets/plans/detailed-clean/garage-carport-detailed.jpg" aria-label="Open detailed garage and carport plan preview">
-              <img src="assets/plans/detailed-clean/garage-carport-detailed.jpg" alt="Detailed garage and carport plan showing parking bay divisions, dimensions, and structure footprint" width="1800" height="1260">
+            <a class="plan-image-link" href="assets/plans/renter-clean/garage-carport-renter-clean.jpg" data-lightbox-src="assets/plans/renter-clean/garage-carport-renter-clean.jpg" data-lightbox-alt="Garage and carport parking plan at NorthCliff Commons apartments Shelton WA" data-lightbox-caption="Garage and Carport Parking">
+              <picture><source srcset="assets/plans/renter-clean/garage-carport-renter-clean.webp" type="image/webp"><img src="assets/plans/renter-clean/garage-carport-renter-clean.jpg" alt="Garage and carport parking plan at NorthCliff Commons apartments Shelton WA" width="1800" height="1260" loading="lazy" decoding="async"></picture>
+              <span>View Plan</span>
             </a>
-            <div class="plan-card-copy">
-              <h3>Garage &amp; Carport</h3>
-              <p>Detailed parking bay and garage structure plan with bay divisions, basic dimensions, and footprint information visible.</p>
-              <div class="plan-specs" aria-label="Garage and carport plan details">
-                <span>Parking bays</span>
-                <span>Garage footprint</span>
-                <span>Basic bay spacing</span>
-              </div>
-              <a href="assets/docs/detailed-clean/garage-carport-detailed.pdf">Open Detailed PDF</a>
-            </div>
+            <div class="plan-card-copy"><h3>Garage &amp; Carport</h3><p>Simplified garage and carport plan with bay divisions and overall parking layout.</p><div class="plan-specs"><span>Garage</span><span>Carport</span></div><div class="plan-actions"><a class="button primary" href="#leasing-form" data-unit-select="Parking">Ask About Parking</a><a href="assets/docs/detailed-clean/garage-carport-detailed.pdf">View Detailed PDF</a></div><small>Or call Jennifer at <a href="tel:+13602291220">360-229-1220</a>.</small></div>
           </article>
+        </div>
+        <p class="section-link"><a href="/floor-plans">Open the full floor plans page</a></p>
+      </section>
+
+      <section class="section-wrap waitlist-section" id="waitlist">
+        <div>
+          <p class="section-label">Priority List</p>
+          <h2>Stay in the loop.</h2>
+          <p>Be among the first to receive floor plan releases, pricing updates, construction progress, and leasing availability for NorthCliff Commons.</p>
+        </div>
+        <form class="waitlist-form" action="/api/contact" method="post" data-inquiry-form data-form-type="waitlist">
+          <label class="honeypot-field" aria-hidden="true">Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+          <input name="formType" type="hidden" value="waitlist">
+          <label>Name <input name="name" type="text" autocomplete="name" required></label>
+          <label>Email <input name="email" type="email" autocomplete="email" required></label>
+          <label>Bedroom preference
+            <select name="unitType" data-unit-interest>
+              <option>Not sure yet</option><option>1BR</option><option>2BR</option><option>3BR</option>
+            </select>
+          </label>
+          <button class="button primary" type="submit" data-submit-button>Join the List</button>
+          <p class="form-note" data-form-note aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="section-wrap builder-section" id="about">
+        <div class="builder-visual" aria-hidden="true"><span>F&amp;S</span><small>Local builder</small></div>
+        <div>
+          <p class="section-label">About the Builder</p>
+          <h2>Built by a local Mason County team.</h2>
+          <p>NorthCliff Commons is developed by Dale, the owner-developer, with F&amp;S Construction &amp; Septic LLC serving as the Shelton-based general contractor.</p>
+          <p>This is not a faceless out-of-area project. It is a 43-unit community being managed by people who live and work in Mason County.</p>
+          <div class="hero-actions"><a class="button secondary" href="/about">Read the Builder Story</a><a class="button secondary" href="https://www.fsconstructionseptic.com/">Visit F&amp;S Construction</a></div>
+        </div>
+      </section>
+
+      <section class="section-wrap timeline-section" id="progress">
+        <div class="section-heading">
+          <p class="section-label">Construction Progress</p>
+          <h2>Follow the road to opening day.</h2>
+          <p>Join the list for monthly progress updates as NorthCliff Commons moves toward its December 2027 opening.</p>
+        </div>
+        <div class="timeline-grid">
+          <article class="is-current"><span>Current</span><h3>Priority Interest List</h3><p>Now collecting early leasing interest and bedroom preferences.</p></article>
+          <article><span>Upcoming</span><h3>Foundation Work</h3><p>Construction milestone updates will be added here as photos become available.</p></article>
+          <article><span>Upcoming</span><h3>Framing &amp; Exterior</h3><p>Future monthly updates can include photos from the same site angle.</p></article>
+          <article><span>Oct 2027</span><h3>Pre-Leasing Opens</h3><p>Priority list members receive the first availability and pricing updates.</p></article>
+          <article><span>Dec 2027</span><h3>Grand Opening</h3><p>NorthCliff Commons is scheduled to open in December 2027.</p></article>
         </div>
       </section>
 
       <section class="section-wrap location-section" id="location">
         <div class="location-panel">
           <p class="section-label">Location</p>
-          <h2>1220 Jones St.<br>Shelton, WA 98584</h2>
-          <p>Set within Shelton, NorthCliff Commons brings new apartment living to a practical Mason County location with access to local routes, services, and the surrounding Puget Sound region.</p>
+          <h2>Right in the heart of Shelton.</h2>
+          <p>1220 Jones St. gives you a Mason County setting with access to local services, Highway 101, parks, schools, and the surrounding Puget Sound region.</p>
           <a class="button secondary light" href="https://www.google.com/maps/search/?api=1&query=1220%20Jones%20St%2C%20Shelton%2C%20WA%2098584">Open Map</a>
         </div>
-        <div class="map-panel" aria-label="Stylized map for 1220 Jones Street, Shelton, Washington">
-          <span>Jones St.</span>
-          <strong>NorthCliff Commons</strong>
-          <small>Shelton, WA</small>
+        <div class="map-panel" aria-label="Stylized map for 1220 Jones Street, Shelton, Washington"><span>Jones St.</span><strong>NorthCliff Commons</strong><small>Shelton, WA</small></div>
+      </section>
+
+      <section class="section-wrap faq-section" id="faq">
+        <div class="section-heading"><p class="section-label">FAQ</p><h2>Quick answers before you join the list.</h2></div>
+        <div class="faq-list">
+          <details><summary>When does NorthCliff Commons open?</summary><p>NorthCliff Commons is scheduled to open in December 2027. <a href="#leasing-form">Join the Priority List</a></p></details>
+          <details><summary>How do I join the priority leasing list?</summary><p>Add your name, email, and bedroom preference to the form above. <a href="#waitlist">Join Now</a></p></details>
+          <details><summary>Where is NorthCliff Commons located?</summary><p>NorthCliff Commons is at 1220 Jones St., Shelton, WA 98584. <a href="#location">View Location</a></p></details>
+          <details><summary>What floor plans are available?</summary><p>NorthCliff Commons offers 1, 2, and 3 bedroom apartments across four buildings. <a href="#floor-plans">View Floor Plans</a></p></details>
+          <details><summary>Is parking available?</summary><p>Garage and carport parking are part of the community plan. Specific assignments will be confirmed during leasing. <a href="#floor-plans">View Garage Plan</a></p></details>
+          <details><summary>When will pricing be announced?</summary><p>Pricing will be released as opening approaches. Priority list members receive updates first. <a href="#waitlist">Get Notified</a></p></details>
+          <details><summary>Who do I contact for leasing?</summary><p>Jennifer Fox is your leasing contact. Call <a href="tel:+13602291220">360-229-1220</a> or email <a href="mailto:jennifer@sentrypark.com">jennifer@sentrypark.com</a>. <a href="/contact">Contact Jennifer</a></p></details>
+          <details><summary>Who is the developer and builder?</summary><p>NorthCliff Commons is developed by Dale and built by F&amp;S Construction &amp; Septic LLC in Shelton. <a href="/about">About the Builder</a></p></details>
+        </div>
+      </section>
+
+      <section class="section-wrap gallery-section" id="gallery">
+        <div class="section-heading"><p class="section-label">Gallery</p><h2>Renderings, plans, and progress visuals.</h2><p>These are project renderings and plan images. More construction photos can be added as the site progresses.</p></div>
+        <div class="gallery-grid">
+          <a href="assets/northcliff-rendering-rust-beige.jpg" data-lightbox-src="assets/northcliff-rendering-rust-beige.jpg" data-lightbox-alt="NorthCliff Commons Shelton WA exterior rendering" data-lightbox-caption="Exterior rendering"><img src="assets/northcliff-rendering-rust-beige.jpg" alt="NorthCliff Commons Shelton WA exterior rendering" width="1874" height="839" loading="lazy"></a>
+          <a href="assets/northcliff-rendering.jpg" data-lightbox-src="assets/northcliff-rendering.jpg" data-lightbox-alt="NorthCliff Commons apartment rendering in Shelton" data-lightbox-caption="Alternate exterior rendering"><img src="assets/northcliff-rendering.jpg" alt="NorthCliff Commons apartment rendering in Shelton" width="1874" height="839" loading="lazy"></a>
+          <a href="assets/northcliff-rendering-original.jpg" data-lightbox-src="assets/northcliff-rendering-original.jpg" data-lightbox-alt="Original NorthCliff Commons apartment rendering" data-lightbox-caption="Original rendering"><img src="assets/northcliff-rendering-original.jpg" alt="Original NorthCliff Commons apartment rendering" width="1874" height="839" loading="lazy"></a>
+          <a href="assets/plans/renter-clean/3-bedroom-renter-clean.jpg" data-lightbox-src="assets/plans/renter-clean/3-bedroom-renter-clean.jpg" data-lightbox-alt="3 bedroom apartment plan gallery image" data-lightbox-caption="3 bedroom plan"><img src="assets/plans/renter-clean/3-bedroom-renter-clean.jpg" alt="3 bedroom apartment plan gallery image" width="1800" height="1260" loading="lazy"></a>
+          <a href="assets/plans/renter-clean/building-a-first-floor-renter-clean.jpg" data-lightbox-src="assets/plans/renter-clean/building-a-first-floor-renter-clean.jpg" data-lightbox-alt="Building A and B first floor gallery plan" data-lightbox-caption="Building A/B first floor"><img src="assets/plans/renter-clean/building-a-first-floor-renter-clean.jpg" alt="Building A and B first floor gallery plan" width="1800" height="1260" loading="lazy"></a>
+          <a href="assets/plans/renter-clean/building-a-second-floor-renter-clean.jpg" data-lightbox-src="assets/plans/renter-clean/building-a-second-floor-renter-clean.jpg" data-lightbox-alt="Building A and B second floor gallery plan" data-lightbox-caption="Building A/B second floor"><img src="assets/plans/renter-clean/building-a-second-floor-renter-clean.jpg" alt="Building A and B second floor gallery plan" width="1800" height="1260" loading="lazy"></a>
+          <a href="assets/plans/renter-clean/building-c-d-3-bedroom-renter-clean.jpg" data-lightbox-src="assets/plans/renter-clean/building-c-d-3-bedroom-renter-clean.jpg" data-lightbox-alt="Building C and D 3 bedroom gallery plan" data-lightbox-caption="Building C/D 3 bedroom"><img src="assets/plans/renter-clean/building-c-d-3-bedroom-renter-clean.jpg" alt="Building C and D 3 bedroom gallery plan" width="1800" height="1260" loading="lazy"></a>
+          <a href="assets/plans/renter-clean/garage-carport-renter-clean.jpg" data-lightbox-src="assets/plans/renter-clean/garage-carport-renter-clean.jpg" data-lightbox-alt="Garage and carport gallery plan" data-lightbox-caption="Garage and carport plan"><img src="assets/plans/renter-clean/garage-carport-renter-clean.jpg" alt="Garage and carport gallery plan" width="1800" height="1260" loading="lazy"></a>
         </div>
       </section>
 
       <section class="section-wrap contact-callout" id="contact">
         <div>
           <p class="section-label">Leasing</p>
-          <h2>Ask about availability, timing, and future leasing updates.</h2>
+          <h2>Be first in line when the doors open.</h2>
+          <p>NorthCliff Commons opens December 2027 with 43 units across four buildings. Join the priority list to receive floor plan releases, pricing announcements, and leasing availability before the public.</p>
         </div>
-        <div class="contact-card">
+        <div class="contact-card loud-contact">
           <p>Leasing contact</p>
           <h3>Jennifer Fox</h3>
-          <a href="tel:+13602291220">360-229-1220</a>
+          <a href="tel:+13602291220" aria-label="Call Jennifer Fox at 360-229-1220">360-229-1220</a>
           <a href="mailto:jennifer@sentrypark.com">jennifer@sentrypark.com</a>
-          <a class="button primary" href="contact.html">Contact Jennifer</a>
+          <a class="button primary" href="#leasing-form">Join the Priority Leasing List</a>
         </div>
       </section>
     </main>
@@ -323,9 +436,24 @@
     <footer class="site-footer">
       <p>NorthCliff Commons</p>
       <p>1220 Jones St., Shelton, WA 98584</p>
-      <p><a href="tel:+13602291220">360-229-1220</a> · <a href="mailto:jennifer@sentrypark.com">jennifer@sentrypark.com</a></p>
+      <p><a href="tel:+13602291220" aria-label="Call Jennifer Fox at 360-229-1220">360-229-1220</a> Â· <a href="mailto:jennifer@sentrypark.com">jennifer@sentrypark.com</a></p>
     </footer>
 
+    <nav class="nc-mobile-bar" role="navigation" aria-label="Quick contact">
+      <a href="tel:+13602291220" aria-label="Call Jennifer Fox at 360-229-1220"><span>Call</span></a>
+      <a href="sms:+13602291220" aria-label="Text Jennifer at 360-229-1220"><span>Text</span></a>
+      <a href="mailto:jennifer@sentrypark.com" aria-label="Email Jennifer Fox"><span>Email</span></a>
+      <a href="#leasing-form" aria-label="Join the priority leasing list"><span>Join List</span></a>
+    </nav>
+
+    <div class="lightbox" data-lightbox hidden>
+      <button type="button" class="lightbox-close" data-lightbox-close aria-label="Close image viewer">Close</button>
+      <img src="" alt="" data-lightbox-image>
+      <p data-lightbox-caption></p>
+    </div>
+
+    <div data-analytics-config data-ga-id="" data-meta-pixel-id="" hidden></div>
     <script src="script.js"></script>
   </body>
 </html>
+

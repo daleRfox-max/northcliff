@@ -1,0 +1,131 @@
+<!--
+  snippets/json-ld-schema.html
+
+  Paste this entire block into the <head> of every page.
+  Update lat/long with real coordinates (use Google Maps).
+  Update image URLs to absolute production URLs.
+-->
+
+<!-- ApartmentComplex schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ApartmentComplex",
+  "name": "NorthCliff Commons",
+  "description": "43 new luxury apartments in Shelton, WA. 1, 2, and 3 bedrooms with private patios and garage parking. Opening December 2027.",
+  "url": "https://northcliffcommons.com",
+  "image": [
+    "https://northcliff.vercel.app/assets/northcliff-rendering-rust-beige.jpg"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1220 Jones St.",
+    "addressLocality": "Shelton",
+    "addressRegion": "WA",
+    "postalCode": "98584",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.2168,
+    "longitude": -123.1007
+  },
+  "numberOfAccommodationUnits": 43,
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Private balconies and patios", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Garage parking", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Carport parking", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "New construction", "value": true }
+  ],
+  "containsPlace": [
+    { "@type": "Apartment", "name": "1 Bedroom Apartment", "numberOfBedrooms": 1, "numberOfBathroomsTotal": 1 },
+    { "@type": "Apartment", "name": "2 Bedroom Apartment", "numberOfBedrooms": 2, "numberOfBathroomsTotal": 2 },
+    { "@type": "Apartment", "name": "3 Bedroom Apartment", "numberOfBedrooms": 3, "numberOfBathroomsTotal": 2 }
+  ]
+}
+</script>
+
+<!-- LocalBusiness schema (leasing operations) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "NorthCliff Commons Leasing",
+  "description": "Leasing office for NorthCliff Commons apartments in Shelton, WA",
+  "url": "https://northcliffcommons.com",
+  "telephone": "+1-360-229-1220",
+  "email": "jennifer@sentrypark.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1220 Jones St.",
+    "addressLocality": "Shelton",
+    "addressRegion": "WA",
+    "postalCode": "98584",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.2168,
+    "longitude": -123.1007
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-360-229-1220",
+    "email": "jennifer@sentrypark.com",
+    "contactType": "Leasing",
+    "areaServed": "WA",
+    "availableLanguage": "English"
+  }
+}
+</script>
+
+<!-- FAQPage schema — add after Task 10 (FAQ section) is built -->
+<!-- Update questions/answers to match what's actually on your FAQ section -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When does NorthCliff Commons open?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NorthCliff Commons is scheduled to open in December 2027. Join the priority list to be among the first to receive floor plan releases, pricing updates, and leasing availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is NorthCliff Commons located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NorthCliff Commons is located at 1220 Jones St., Shelton, WA 98584, in a quiet Mason County setting with easy access to local services and Highway 101."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What floor plans are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NorthCliff Commons offers 1, 2, and 3 bedroom apartments across four buildings totaling 43 units. Detailed floor plans are available on the website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is parking included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — both garage and covered carport parking are part of the community. Specific assignments and availability will be confirmed during leasing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who do I contact for leasing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jennifer Fox is the leasing contact for NorthCliff Commons. Call 360-229-1220 or email jennifer@sentrypark.com."
+      }
+    }
+  ]
+}
+</script>
